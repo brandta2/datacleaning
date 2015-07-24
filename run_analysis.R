@@ -1,6 +1,4 @@
-## P8Wbcvk1
-
-setwd("C:\\Users\\varncass2\\Documents\\R\\UCI HAR Dataset")
+setwd("R\\UCI HAR Dataset")
 
 ## Load in Datasets
 ## 1. Merges the training and the test sets to create one data set.
@@ -36,9 +34,6 @@ setwd("C:\\Users\\varncass2\\Documents\\R\\UCI HAR Dataset")
 # wanted column names
 names(x_data) <- featurenames[wantedfeatures , 2]
 
-# merge datasets and add labels
-	##combineddata <- rbind(train, test)
-	#colnames(combineddata) <- c("subject", "activity", featurenames[,2])
 
 # 3. Uses descriptive activity names to name the activities in the data set
 	activity <- read.table("activity_labels.txt")
